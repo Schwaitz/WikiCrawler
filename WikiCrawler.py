@@ -5,7 +5,6 @@ import sys
 
 base_url = "http://wowwiki.wikia.com/wiki/"
 start_page = "Portal:Main"
-#start_page = "Seals"
 item_set = set()
 verbose = True
 
@@ -63,12 +62,14 @@ if "-v" in sys.argv:
 
 print("Starting...\n")
 
-print("Reading from file...\n")
-file = open("items.txt", 'r')
-lines = file.readlines()
-for l in lines:
-    item_set.add(l[:-1])
-file.close()
+# Commented out reading old items from file
+
+#print("Reading from file...\n")
+#file = open("items.txt", 'r')
+#lines = file.readlines()
+#for l in lines:
+    #item_set.add(l[:-1])
+#file.close()
 
 print("Program Started! (", len(item_set), "items loaded )")
 
