@@ -4,7 +4,7 @@ import threading as t
 import sys
 
 base_url = "http://wowwiki.wikia.com/wiki/"
-start_page = "Portal:Main"
+start_page = "ebonchill"
 item_set = set()
 verbose = True
 
